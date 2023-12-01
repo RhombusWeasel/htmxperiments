@@ -1,0 +1,10 @@
+<table class="width-100">
+  {% for msg in msglist %}
+  <tr class="row">
+    {% if msg.role != 'system' %}
+      <th class="width-5 right">{{ msg.role }}:</th>
+      <td class="width-95 left">{{ msg.content }}</td>
+    {% endif %}
+  </tr>
+  {% endfor %}
+</table>

@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite');
+.master-container {
+  font-family: 'Special Elite';
+  width: 99.5vw;
+  height: 98.5vh;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  margin: 2px;
+  border: 0px solid #000;
+  padding: 0px;
+}
+
+.container {
+  font-family: 'Special Elite';
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+  border: 0px solid #000;
+  padding: 0px;
+}
+
+.row {
+  font-family: inherit;
+  display: flex;
+  flex-direction: row;
+  margin: 0px;
+  border: 0px;
+  padding: 0px;
+}
+
+.col {
+  font-family: inherit;
+  display: flex;
+  flex-direction: column;
+  scroll-behavior: auto;
+  margin: 0px;
+  border: 1px solid #000;
+  padding: 0px;
+}
+
+.center {
+  text-align: center;
+}
+
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+}
+
+.j-center {
+  justify-content: center;
+}
+
+.j-left {
+  justify-content: left;
+}
+
+.j-right {
+  justify-content: right;
+}
+
+.a-center {
+  align-items: center;
+}
+
+.a-left {
+  align-items: left;
+}
+
+.a-right {
+  align-items: right;
+}
+
+.width-100 {
+  min-width: 100%;
+  width: 100%;
+  max-width: 100%;
+}
+
+.width-95 {
+  min-width: 95%;
+  width: 95%;
+  max-width: 95%;
+}
+
+.width-90 {
+  min-width: 90%;
+  width: 90%;
+  max-width: 90%;
+}
+
+.width-85 {
+  min-width: 85%;
+  width: 85%;
+  max-width: 85%;
+}
+
+.width-80 {
+  min-width: 80%;
+  width: 80%;
+  max-width: 80%;
+}
+
+.width-75 {
+  min-width: 75%;
+  width: 75%;
+  max-width: 75%;
+}
+
+.width-70 {
+  min-width: 70%;
+  width: 70%;
+  max-width: 70%;
+}
+
+.width-65 {
+  min-width: 65%;
+  width: 65%;
+  max-width: 65%;
+}
+
+.width-60 {
+  min-width: 60%;
+  width: 60%;
+  max-width: 60%;
+}
+
+.width-55 {
+  min-width: 55%;
+  width: 55%;
+  max-width: 55%;
+}
+
+.width-50 {
+  min-width: 50%;
+  width: 50%;
+  max-width: 50%;
+}
+
+.width-45 {
+  min-width: 45%;
+  width: 45%;
+  max-width: 45%;
+}
+
+.width-40 {
+  min-width: 40%;
+  width: 40%;
+  max-width: 40%;
+}
+
+.width-35 {
+  min-width: 35%;
+  width: 35%;
+  max-width: 35%;
+}
+
+.width-30 {
+  min-width: 30%;
+  width: 30%;
+  max-width: 30%;
+}
+
+.width-25 {
+  min-width: 25%;
+  width: 25%;
+  max-width: 25%;
+}
+
+.width-20 {
+  min-width: 20%;
+  width: 20%;
+  max-width: 20%;
+}
+
+.width-15 {
+  min-width: 15%;
+  width: 15%;
+  max-width: 15%;
+}
+
+.width-10 {
+  min-width: 10%;
+  width: 10%;
+  max-width: 10%;
+}
+
+.width-5 {
+  min-width: 5%;
+  width: 5%;
+  max-width: 5%;
+}

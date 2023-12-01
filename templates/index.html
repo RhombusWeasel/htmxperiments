@@ -1,0 +1,39 @@
+<!-- A basic chat page for interfacing with chatGPT -->
+<head>
+  <script src="https://unpkg.com/htmx.org@1.9.9" integrity="sha384-QFjmbokDn2DjBjq+fM+8LUIVrAgqcNW2s0PjAxHETgRn9l4fvX31ZxDxvwQnyMOX" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body class="master-container">
+  <div class="container">
+    <div class="row">
+      <div class="col width-10">
+        <h1 class="center">Tools</h1>
+        <div hx-get="/get_tools" hx-target="#tools" hx-trigger="load delay:1s">
+          <div class="a-center width-100" id="tools">
+          </div>
+        </div>
+      </div>
+      <div class="col width-90">
+        <h1 class="center">Chat</h1>
+        <div hx-get="/get_chat" hx-target="#chatbox" hx-trigger="every 1s">
+          <div id="chatbox">
+          </div>
+        </div>
+        <form class="form-inline row">
+          <div id="spinner" class="spinner-border text-primary" role="status" style="display: none;">
+            <span class="sr-only">Loading...</span>
+          </div>
+          <div class="j-center">
+            <textarea class="form-control" id="input" cols="150" rows="5" name="input" placeholder="Enter your message here"></textarea>
+          </div>
+          <button
+            type="submit"
+            class="btn btn-primary mb-2"
+            hx-post="/chat"
+            hx-target="#chatbox"
+          >Send</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>

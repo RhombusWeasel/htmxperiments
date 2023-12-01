@@ -1,0 +1,13 @@
+<!-- Add a table listing each assistant's name and the model used from the provided ass_list-->
+<table>
+  {% for tool in tools %}
+  <tr class="row" title="{{tools[tool]['description']}}">
+    <td class="width-90">{{ tools[tool]['name'] }}</td>
+    {%if tools[tool]['active']%}
+    <td class="j-right width-10"><input type="checkbox" hx-post="/toggle_tool/{{tool}}" hx-target="#tools" checked/></td>
+    {%else%}
+    <td class="j-right width-10"><input type="checkbox" hx-post="/toggle_tool/{{tool}}" hx-target="#tools"/></td>
+    {%endif%}
+  </tr>
+  {%endfor%}
+</table>
